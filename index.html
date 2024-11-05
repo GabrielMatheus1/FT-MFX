@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/icons/LogoIcon.png">
+    <title>FT - MFX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ 
+    <a href="#" class="link-whatsapp">
+    <img class="whats-fixed" src="imgs/icons/Whatsapp Logo.png">
+    </a>
+    
+    
+    <!-- sessão dos professores -->
+    <section class="professores">
+
+
+<p>E-Traders</p>
+
+<div class="carousel-professores">
+
+  <div class="carousel__body">
+
+    <div class="carousel__prev"><i class="far fa-angle-left"><</i></div>
+    <div class="carousel__next"><i class="far fa-angle-right">></i></div>
+
+
+    <div class="carousel__slider">
+
+<!-- professor 1 -->
+      <div class="carousel__slider__item">
+        <div class="item__3d-frame">
+          <div class="item__3d-frame__box item__3d-frame__box--front">
+            <img src="imgs/professores/p1.png" alt="professor e fundador">
+          </div>
+          <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+          <div class="item__3d-frame__box item__3d-frame__box--right"></div>
+        </div>
+      </div>
+
+
+<!-- professor 2 -->
+      <div class="carousel__slider__item">
+        <div class="item__3d-frame">
+          <div class="item__3d-frame__box item__3d-frame__box--front">
+            <img src="imgs/professores/p2.png" alt="professor 2">
+          </div>
+          <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+          <div class="item__3d-frame__box item__3d-frame__box--right"></div>
+        </div>
+      </div>
+
+
+<!-- professor 3 -->
+      <div class="carousel__slider__item">
+        <div class="item__3d-frame">
+          <div class="item__3d-frame__box item__3d-frame__box--front">
+            <img src="imgs/professores/p3.png" alt="professor 3">
+          </div>
+          <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+          <div class="item__3d-frame__box item__3d-frame__box--right"></div>
+        </div>
+      </div>
+
+
+<!-- professor 4 -->
+      <div class="carousel__slider__item">
+        <div class="item__3d-frame">
+          <div class="item__3d-frame__box item__3d-frame__box--front">
+            <img src="imgs/professores/p4.png" alt="professor 4">
+          </div>
+          <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+          <div class="item__3d-frame__box item__3d-frame__box--right"></div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </section>
+    <!-- fim professores -->
+    
+    <!-- formulario de inscricao -->
+     <section class="form-insc">
+         
+  <img src="imgs/icons/Logo - Form.png">
+  
+            
+  <div class="conteudo-form">
+      
+<form id="form" action="https://sheetdb.io/api/v1/uvlkbzlcj05oj" method="post">
+      
+    <h2>Inscreva-se</h2>
+    
+      <!-- load entre steps -->
+      <div class="load-form" id="load-form">
+      <div class="loading-icon"></div>
+      <h3>Processando dados</h3>
+      </div>
+      
+      <!-- primeira parte nome -->
+    <div id="step-1" class="step active">
+      
+      <div class="campos">
+        <label for="nome">Digite seu nome!</label>
+        <input type="text" id="nome" name="Nome" required>
+      </div>
+       
+      <div class="btns">
+        <button id="next-btn1" disabled>Continuar</button>
+      </div>
+      
+      <p>Ao enviar seus dados, você declara estar de acordo
+        com nossa <a href="#">Política de Privacidade</a>.</p>
+      
+    </div>
+    
+      <!-- segunda parte whatsapp -->
+    <div id="step-2" class="step ">
+      
+      <div class="campos">
+        <label for="phone">Digite seu WhatsApp!</label>
+        
+        <input type="tel" id="phone" maxlength="11" name="Telefone" required>
+        <span id="inf-phone">Ex: (11) 91234-1234</span>
+      </div>
+     
+      <div class="btns">
+        <button id="back-btn2">Voltar</button>
+        <button id="next-btn2" disabled>Continuar</button>
+      </div>
+      
+      <p>Ao enviar seus dados, você declara estar de acordo
+        com nossa <a href="#">Política de Privacidade</a>.</p>
+      
+    </div>
+    
+
+      <!-- terceira parte email -->
+    <div id="step-3" class="step ">
+
+      <div class="campos">
+        
+        <label for="email">Digite seu email!</label>
+        <input type="email" id="email" name="Email" required>
+      </div>
+        
+      <div class="btns">
+      <button id="back-btn3">Voltar</button>
+      <button id="submit-btn" disabled>Concluir</button>
+      </div>
+      
+       <p>Ao enviar seus dados, você declara estar de acordo
+        com nossa <a href="#">Política de Privacidade</a>.
+      </p>
+      
+    </div>
+    
+      <!-- quarta parte final -->
+      <div id="step-4" class="step">
+
+      <h5>Parabéns, sua inscrição foi enviada!</h5>
+        
+        <h6>Entraremos em contato   em breve.</h6>
+      
+      </div>
+    
+    </form>
+      
+  </div>
+         
+  </section>
+    
+     
+    <!-- perguntas frequentes -->
+    <section class="faq">
+   
+    
+    <div class="conteudo-faq">
+      <h2>FAQ</h2>
+      
+        <!-- input de pergunta encaminhando ao whatsapp -->
+      <div class="inp">
+        
+        <input type="text" id="faq-input" placeholder="  What is...">
+        
+        <a href="#" id="link-quest" target="_blank">
+          <img class="img-inp" src="imgs/icons/icon1.png">
+        </a>
+        
+      </div>
+      
+        <!-- primeira pergunta e resposta -->
+      <div class="quest">
+        <h3>What is POS system?</h3>
+        <p>Point of sale (POS) system is the spot
+          where your custumer makes the payment for
+          goods or services that are offered by your
+          company.</p>
+      </div>
+      
+        <!-- segunda pergunta e resposta -->
+      <div class="quest">
+        <h3>What type of business is suitable
+          for using POS?</h3>
+        <p>for example, restaurants, fashion stores,
+          book stores, grocery store, salons and spas.</p>
+      </div>
+      
+        <!-- terceira pergunta e resposta -->
+      <div class="quest">
+        <h3>What type of business is suitable
+          for using POS?</h3>
+        <p>for example, restaurants, fashion stores,
+          book stores, grocery store, salons and spas.</p>
+      </div>
+      
+    </div>
+    
+    
+  </section>
+
+
+   <!-- sessão das redes sociais -->
+    <section class="redes">
+
+        <!-- parte do carrossel -->
+        <div class="conteudo-carrossel">
+
+            <img class="cell-imgs" src="imgs/carrossel-redes/Fone.png" alt="celular de fundo">
+
+            <div class="carrossel">
+
+                <a href="https://www.instagram.com/financialtraining_?igsh=ZTRyNTM4YWxoY2d4" id="link-cell">
+                    <div class="conteiner-imgs" id="img">
+                        <img class="image" src="imgs/carrossel-redes/StartTrade1.jpg"
+                            alt="Primeira imagem dos aluno na aula de Start Trade">
+                        <img class="image" src="imgs/carrossel-redes/StartTrade2.jpg"
+                            alt="Segunda imagem dos alunos na aula de Start Trade">
+                        <img class="image" src="imgs/carrossel-redes/StartTrade3.jpg"
+                            alt="Terceira imagem dos alunos na aula de Start Trade">
+                        <img class="image" src="imgs/carrossel-redes/MercadoFinanceiro.jpg"
+                            alt="Imagem dos alunos na aula de Mercado Financeiro">
+                        <img class="image" src="imgs/carrossel-redes/Forex.jpg" alt="Imagem dos alunos na aula de Forex">
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- Parte das redes sociais do meio -->
+        <div class="redes-sociais">
+
+            <img src="imgs/carrossel-redes/RedesSociais.png">
+
+            <a href="https://www.instagram.com/financialtraining_?igsh=ZTRyNTM4YWxoY2d4" class="link-rede">
+                <img class="link-img" src="imgs/carrossel-redes/Insta.png" alt="Imagem do Instagram">
+            </a>
+
+            <a href="https://youtube.com/@oalexandrechaves?si=BU1tedmvq3GYgJgA" class="link-rede">
+                <img class="link-img" src="imgs/carrossel-redes/Youtube.png" alt="Imagem do Youtube">
+            </a>
+
+        </div>
+
+
+        <!-- Parte do mosaico do youtube -->
+        <div class="img-youtube">
+
+            <a href="https://youtube.com/@oalexandrechaves?si=BU1tedmvq3GYgJgA" class="link-rede">
+                <img class="link-img" src="imgs/carrossel-redes/Mosaico.png" alt="Imagem do Youtube">
+            </a>
+
+        </div>
+
+
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
