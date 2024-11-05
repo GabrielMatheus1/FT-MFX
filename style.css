@@ -88,7 +88,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   position: absolute;
-  bottom: 30%;
+  bottom: -30%;
 }
 
 .carousel__prev i, .carousel__next i {
