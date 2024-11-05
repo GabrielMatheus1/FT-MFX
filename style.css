@@ -89,6 +89,7 @@ body {
   align-items: center;
   position: absolute;
   bottom: 40%;
+  z-index: 5;
 }
 
 .carousel__prev i, .carousel__next i {
