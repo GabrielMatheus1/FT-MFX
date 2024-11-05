@@ -87,7 +87,7 @@ body {
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  position: absolute;
+  position: relative;
   bottom: 40%;
   z-index: 5;
 }
