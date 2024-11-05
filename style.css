@@ -72,9 +72,14 @@ body {
 }
 
 .carousel__prev, .carousel__next {
-  position: absolute;
-  bottom: 5%;
   transition: transform 0.25s ease;
+}
+
+.btn-carousel-professores {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .carousel__prev i, .carousel__next i {
@@ -84,16 +89,7 @@ body {
 }
 
 .carousel__prev:hover, .carousel__next:hover {
-
   transform: scale(1.25);
-}
-
-.carousel__prev {
-  left: 40%;
-}
-
-.carousel__next {
-  right: 40%;
 }
 
 .carousel__body {
