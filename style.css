@@ -80,16 +80,15 @@ body {
 .carousel__prev, .carousel__next {
   transition: transform 0.25s ease;
   z-index: 3;
-}
+  }
 
 .btn-carousel-professores {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  position: relative;
-  bottom: 40%;
-  z-index: 5;
+  position: absolute;
+  top: 600px;
 }
 
 .carousel__prev i, .carousel__next i {
