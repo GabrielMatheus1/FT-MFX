@@ -278,7 +278,7 @@ button[disabled], button[disabled]:hover {
   transform: translate(0);
   animation: none;
 }
-
+ 
 button {
   background: #123c56;
   border: 1px solid #e6e6e6;
