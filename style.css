@@ -328,16 +328,16 @@ button:active {
 
 /* grade de cursos  */
 #grade-cursos {
-    height: 600px;
+    height: 680px;
     overflow: hidden;
     position: relative;
-    padding: 20px;
+    padding: 80px 40px;
 
 }
 
 #grade-cursos:after {
     content: "";
-    height: 600px;
+    height: 680px;
     width: 100%;
     position: absolute;
     top: 0;
