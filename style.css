@@ -5,13 +5,6 @@
   user-select: none;
 }
 
-:root {
-  --box-bg: #1e272e;
-  --box-shadow: #0000003c;
-  --box-shadow-border: #0000002f;
-  --box-border: #fff;
-}
-
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Poppins", sans-serif;
 }
@@ -79,10 +72,22 @@ body {
   font-size: 60px;
   color: #fea50f;
   cursor: pointer;
+  border-radius: 100%;
+  transition: all 0.5s ease;
+  height: 20px;
+}
+
+.carousel__prev i:hover, .carousel__next i:hover {
+  color: #fff;
+  background: #fea50f99;
 }
 
 .carousel__prev:hover, .carousel__next:hover {
   transform: scale(1.25);
+}
+
+.carousel__prev:active, .carousel__next:active {
+  transform: scale(1.05);
 }
 
 .carousel__prev {
