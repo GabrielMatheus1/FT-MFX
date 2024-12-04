@@ -445,8 +445,8 @@ button:active {
 /*   */
 
 /* depoimentos */
-
 #depoimentos-alunos {
+  padding: 50px;
   width: 100%;
   height: 700px;
   background-image: URL('imgs/backgrounds/Redes-Form-Dep.png');
@@ -463,9 +463,8 @@ button:active {
 
 #depoimentos-alunos h2 {
   color: #fea50f;
-  padding-top: 50px;
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .container {
@@ -473,15 +472,13 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin-top: 2em;
   height: 600px;
 }
 
 .card-carousel {
   --card-width: 80%;
   --card-max-width: 320px;
-  --card-height: 350px;
+  --card-height: 400px;
   --carousel-min-width: 600px;
   z-index: 1;
   position: relative;
@@ -592,17 +589,18 @@ button:active {
     background-image: url("./imgs/alunos/eu.jpg");
 }
 
-.image-container {
-  width: 8em;
-  height: 8em;
+#depoimentos-alunos .card .info-aluno .image-container {
+  width: 5em;
+  height: 5em;
   position: relative;
+  right: 20px;
   background-size: cover;
   margin-bottom: 1.3em;
   border-radius: 100%;
   padding: 1em;
 }
 
-.image-container::after {
+#depoimentos-alunos .card .info-aluno .image-container::after {
   content: "";
   display: block;
   width: 120%;
@@ -614,8 +612,21 @@ button:active {
   left: calc(-10% - 3px);
 }
 
-#depoimentos-alunos h2 a {
-  color: #041a28;
+#depoimentos-alunos .card .info-aluno {
+  padding: 10px;
+  position: relative;
+  display: flex;
+}
+
+#depoimentos-alunos .card .info-aluno h4 {
+  width: 50%;
+  color: #fea50f;
+  text-align: center;
+}
+
+#depoimentos-alunos .card .info-aluno p {
+  width: 100%;
+  text-align: center;
 }
 /* */
 
