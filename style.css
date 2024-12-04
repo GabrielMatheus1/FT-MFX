@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -207,7 +206,7 @@ body {
 .form-insc img {
   width: 150px;
   position: relative;
-  left: 15px;
+  left: 30px;
 }
 
 /* */
@@ -278,7 +277,7 @@ button[disabled], button[disabled]:hover {
   transform: translate(0);
   animation: none;
 }
- 
+
 button {
   background: #123c56;
   border: 1px solid #e6e6e6;
@@ -331,7 +330,7 @@ button:active {
     height: 680px;
     overflow: hidden;
     position: relative;
-    padding: 40px 80px;
+    padding: 80px 40px;
 
 }
 
@@ -443,6 +442,9 @@ button:active {
     filter: drop-shadow(0 0 5px #fff);
 }
 /*   */
+
+
+
 
 /* depoimentos */
 #depoimentos-alunos {
@@ -635,9 +637,11 @@ button:active {
 /* partr da faq */
 .faq {
   width: 100%;
-  height: 650px;
+  height: 750px;
+  padding: 30px;
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: gray;
   background-image: URL('imgs/backgrounds/Professores-FAQ.png');
@@ -660,19 +664,20 @@ button:active {
 }
 
 .conteudo-faq h2{
-  font-size: 35px;
-  font-weight: 900;
+  color: #fea50f;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
 /* input para enviar pergunta no whatsapp */
 .inp {
-  height: 25px;
-  width: 350px;
+  height: 40px;
+  width: 500px;
   margin: 10px;
+  padding: 2px;
   border-radius: 5px;
-  font-size: 8px;
-  background-color: burlywood;
+  background: none;
+  border: 3px solid #fea50f;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -681,32 +686,50 @@ button:active {
 .inp input {
   background: none;
   border: none;
-  width: 100%;
+  width: 455px;
   height: 100%;
+  padding: 0 10px;
 }
 
-.img-inp{
-  width: 20px;
+.img-inp {
+  width: 25px;
   position: absolute;
   right: 10px;
   top: 2px;
+  transition: all 1s ease;
+}
+
+.img-inp:hover {
+  transform: scale(1.5);
 }
 
 /* perguntas e respostas */
-.quest {
+.caixa-faq {
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.quest {
+  width: auto;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .quest p {
   margin: 10px;
-  background-color: #fea50f;
+  background-color: #fff;
+  color: #000;
   width: 340px;
-  height: 80px;
   padding: 10px;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: bold;
   border-radius: 10px;
   text-align: justify;
   display: flex;
@@ -715,9 +738,10 @@ button:active {
 }
 
 .quest h3 {
+  color: #fea50f;
   margin: 10px;
-  font-size: 15px;
-  width: 240px;
+  font-size: 18px;
+  width: 100%;
 }
 /*fim faq */
 
