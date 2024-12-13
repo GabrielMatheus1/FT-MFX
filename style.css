@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6, p {
 body {
   min-width: 760px;
     background: #000;
+    overflow-x: hidden;
 }
 
 /* whatsapp contato */
@@ -637,7 +638,6 @@ button:active {
 /* partr da faq */
 .faq {
   width: 100%;
-  height: 750px;
   padding: 30px;
   position: relative;
   display: flex;
@@ -651,7 +651,8 @@ button:active {
 }
 
 .conteudo-faq {
-  width: 700px;
+  width: 100%;
+  min-height: 650px;
   height: 100%;
   padding: 20px;
   display: flex;
@@ -710,23 +711,25 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 60px;
 }
 
 .quest {
+  max-width: 400px;
   width: auto;
   height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .quest p {
   margin: 10px;
   background-color: #fff;
   color: #000;
-  width: 340px;
+  width: 100%;
   padding: 10px;
   font-size: 12px;
   font-weight: bold;
@@ -741,7 +744,6 @@ button:active {
   color: #fea50f;
   margin: 10px;
   font-size: 18px;
-  width: 100%;
 }
 /*fim faq */
 
