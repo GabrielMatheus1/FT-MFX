@@ -222,12 +222,17 @@ body {
   color: #fff;
   position: relative;
   overflow: hidden;
+  background-image: url('imgs/backgrounds/Fundo-Form.png');
+  background-position: -50px 10px;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 10px #fff;
 }
 
 .conteudo-form h2 {
   margin-bottom: 50px;
   text-align: center;
   font-size: 35px;
+  font-weight: 500;
 }
 
 /* passos do formulario */
@@ -302,6 +307,19 @@ button:hover {
   
 }
 
+.campos #nonee {
+  display: flex;
+  position: absolute;
+  right: 52%;
+  bottom: -6px
+}
+
+.checkk {
+  display: none;
+  position: relative;
+  padding-left: 10%;
+}
+
 button:active {
   transform: translateY(4px);
   transition: 0.4s ease-in-out;
@@ -314,134 +332,26 @@ button:active {
 }
 
 .step h4 {
-  font-size: 15px;
+  font-size: 35px;
   text-align: center;
+  margin-top: 40px;
 }
 
 .step h5 {
   font-size: 20px;
   text-align: center;
+  margin-top: 40px;
 }
 /* fim formulario */
 
 
 
 /* grade de cursos  */
-#grade-cursos {
-    height: 680px;
-    overflow: hidden;
-    position: relative;
-    padding: 80px 40px;
 
-}
 
-#grade-cursos:after {
-    content: "";
-    height: 680px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1)90%);
-    z-index: -1;
-    overflow: hidden;
-}  
 
-#grade-cursos h2 { 
-    color: #fea50f;
-    text-align: center;
-    font-size: 50px;
-}
 
-/* imagens não exibidas */
-.imagem {
-    display: none;
-}
 
-/* imagem exibida */
-.imagem.selecionada {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.4;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    animation: mudarimage 2s;
-}
-
-/* animação para troca de imagens */
-@keyframes mudarimage {
-    from {
-        opacity: 0.2;
-    }
-    to {
-        opacity: 0,4;
-    }
-}
-
-/* caixa do conteudo de informações */
-.conteudo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-height: 500px;
-}
-
-/* informações não exibidas */
-.informacao {
-    display: none;
-}
-
-/* informação exibida */
-.informacao.ativa {
-    display: block;
-}
-
-/* titulo das info. */
-.informacao h3 {
-    font-size: 60px;
-    margin-bottom: 40px;
-    color: white;
-}
-
-/* descrição das info. */
-.descricao {
-    width: 90%;
-    height: 200px;
-    font-size: 20px;
-    color: white;
-    text-align: justify;
-    overflow: auto;
-    padding: 20px;
-}
-
-/* caixa dos botões alinhadas */
-.botao-flex {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* aparencia dos botões */
-.botao-flex .botao {
-    width: 30px;
-    height: 40px;
-    border: solid 2px transparent;
-    border-radius: 100%;
-    background: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.botao-flex .botao.selecionado {
-    background: rgb(255,255,255,0.2);
-    filter: drop-shadow(0 0 5px #fff);
-}
 /*   */
 
 
@@ -452,9 +362,13 @@ button:active {
   padding: 50px;
   width: 100%;
   height: 700px;
-  background-image: URL('imgs/backgrounds/Redes-Form-Dep.png');
+  background-image: URL('imgs/backgrounds/Redes-Form-Dep.pngg');
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .visuallyhidden {
@@ -464,10 +378,9 @@ button:active {
   opacity: 0;
 }
 
-#depoimentos-alunos h2 {
-  color: #fea50f;
-  text-align: center;
-  font-size: 50px;
+#depoimentos-alunos #log-depoimento {
+  width: 500px;
+  margin-bottom: 60px;
 }
 
 .container {
@@ -476,6 +389,7 @@ button:active {
   justify-content: center;
   align-items: center;
   height: 600px;
+  width: 90%;
 }
 
 .card-carousel {
@@ -654,18 +568,19 @@ button:active {
   width: 100%;
   min-height: 650px;
   height: 100%;
-  padding: 20px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  gap:  60px;
   color: #e6e6e6;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
 
 .conteudo-faq h2{
-  color: #fea50f;
+  color: #e6e6e6;
   font-size: 50px;
   margin-bottom: 20px;
 }
@@ -712,7 +627,7 @@ button:active {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 20px;
 }
 
 .quest {
@@ -727,8 +642,8 @@ button:active {
 
 .quest p {
   margin: 10px;
-  background-color: #fff;
-  color: #000;
+  background-color: #fea50f;
+  color: #e6e6e6;
   width: 100%;
   padding: 10px;
   font-size: 12px;
@@ -740,8 +655,13 @@ button:active {
   justify-content: center;
 }
 
+#h3-faq {
+  font-size: 30px;
+  font-weight: 300;
+}
+
 .quest h3 {
-  color: #fea50f;
+  color: #e6e6e6;
   margin: 10px;
   font-size: 18px;
 }
